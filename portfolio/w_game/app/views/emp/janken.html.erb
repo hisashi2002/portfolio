@@ -1,0 +1,25 @@
+  <header>
+  </header>
+    <div class="top-container">
+      <div class="main-message">
+        <h1>じゃんけんで勝負しよう！</h1>
+        <p>勝ったら特典をプレゼントするよ</p>
+      </div>
+      <div class="janken-message">
+        <p>それでは、さっそくはじめましょう！</p>
+        <p>出す手を選んでください</p>
+        <p>じゃん・けん・・・・</p>
+      </div>
+      <div class="hands-select">
+        <div class="hands-btn">
+          <%= button_to "　ぐう　", {controller: "emp", action: "choice0"} %>
+        </div>  
+        <div class="hands-btn">
+          <%= button_to "　ちょき　", {controller: "emp", action: "choice1"} %>
+        </div>    
+        <div class="hands-btn">
+          <%= button_to "　ぱあ　", {controller: "emp", action: "choice2"} %>
+        </div>
+      </div>  
+      </div>  
+    </div>

@@ -1,0 +1,273 @@
+@charset "UTF-8";
+/* 共通レイアウト ================================ */
+/* line 3, /home/ec2-user/environment/w_game/app/assets/stylesheets/emp.scss */
+html,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* line 13, /home/ec2-user/environment/w_game/app/assets/stylesheets/emp.scss */
+header {
+  height: 70px;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+}
+
+/* line 20, /home/ec2-user/environment/w_game/app/assets/stylesheets/emp.scss */
+header h1 {
+  padding: 15px;
+}
+
+/* line 24, /home/ec2-user/environment/w_game/app/assets/stylesheets/emp.scss */
+.top-container {
+  padding: 100px 0;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  height: 700px;
+  min-height: 100%;
+  color: white;
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  background-size: cover;
+  background-image: url("/assets/other_images/back_image3.jpg");
+  z-index: 2;
+}
+
+/* line 39, /home/ec2-user/environment/w_game/app/assets/stylesheets/emp.scss */
+.main-container {
+  height: 100px;
+  width: auto;
+}
+
+/* line 44, /home/ec2-user/environment/w_game/app/assets/stylesheets/emp.scss */
+.main-message {
+  height: 100px;
+}
+
+/* HOMEレイアウト ================================ */
+/* line 51, /home/ec2-user/environment/w_game/app/assets/stylesheets/emp.scss */
+.game-select {
+  height: 100px;
+}
+
+/* line 55, /home/ec2-user/environment/w_game/app/assets/stylesheets/emp.scss */
+.game-select a {
+  padding: 20px;
+  margin: 10px;
+  background-color: black;
+  color: white;
+  display: inline-block;
+}
+
+/* JANKENレイアウト ================================ */
+/* line 64, /home/ec2-user/environment/w_game/app/assets/stylesheets/emp.scss */
+.janken-message {
+  height: 200px;
+  padding: 50px;
+}
+
+/* line 69, /home/ec2-user/environment/w_game/app/assets/stylesheets/emp.scss */
+.hands.select {
+  height: 100px;
+  padding-top: 0px;
+}
+
+/* line 74, /home/ec2-user/environment/w_game/app/assets/stylesheets/emp.scss */
+.hands-btn {
+  height: 50px;
+  width: 100px;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 20px 30px;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 3px;
+}
+
+/* RETRYレイアウト ================================ */
+/* line 87, /home/ec2-user/environment/w_game/app/assets/stylesheets/emp.scss */
+.main-contents {
+  height: 500px;
+  width: 100%;
+}
+
+/* line 92, /home/ec2-user/environment/w_game/app/assets/stylesheets/emp.scss */
+.btn a {
+  padding: 30px 30px;
+  margin: 10px;
+  background-color: black;
+  color: white;
+  display: inline-block;
+}
+
+/* WINレイアウト ================================ */
+/* line 101, /home/ec2-user/environment/w_game/app/assets/stylesheets/emp.scss */
+.main-contents {
+  height: 500px;
+  width: 100%;
+}
+
+/* line 106, /home/ec2-user/environment/w_game/app/assets/stylesheets/emp.scss */
+.footer-message {
+  padding-top: 50px;
+  color: white;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+@charset "UTF-8";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* 共通レイアウト ================================ */
+/* line 21, /home/ec2-user/environment/w_game/app/assets/stylesheets/home.scss */
+html,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* line 31, /home/ec2-user/environment/w_game/app/assets/stylesheets/home.scss */
+header {
+  height: 70px;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+}
+
+/* line 38, /home/ec2-user/environment/w_game/app/assets/stylesheets/home.scss */
+header h1 {
+  padding: 15px;
+}
+
+/* line 42, /home/ec2-user/environment/w_game/app/assets/stylesheets/home.scss */
+.top-container {
+  padding: 100px 0;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  height: 700px;
+  min-height: 100%;
+  color: white;
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  background-size: cover;
+  background-image: url("/assets/other_images/back_image3.jpg");
+  z-index: 2;
+}
+
+/* line 57, /home/ec2-user/environment/w_game/app/assets/stylesheets/home.scss */
+.main-container {
+  height: 100px;
+  width: auto;
+}
+
+/* line 62, /home/ec2-user/environment/w_game/app/assets/stylesheets/home.scss */
+.main-message {
+  height: 100px;
+}
+
+/* HOMEレイアウト ================================ */
+/* line 69, /home/ec2-user/environment/w_game/app/assets/stylesheets/home.scss */
+.game-select {
+  height: 100px;
+}
+
+/* line 73, /home/ec2-user/environment/w_game/app/assets/stylesheets/home.scss */
+.game-select a {
+  padding: 20px;
+  margin: 10px;
+  background-color: black;
+  color: white;
+  display: inline-block;
+}
+
+/* JANKENレイアウト ================================ */
+/* line 82, /home/ec2-user/environment/w_game/app/assets/stylesheets/home.scss */
+.janken-message {
+  height: 200px;
+  padding: 50px;
+}
+
+/* line 87, /home/ec2-user/environment/w_game/app/assets/stylesheets/home.scss */
+.hands.select {
+  height: 100px;
+  padding-top: 0px;
+}
+
+/* line 92, /home/ec2-user/environment/w_game/app/assets/stylesheets/home.scss */
+.hands-btn {
+  height: 50px;
+  width: 100px;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 20px 30px;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 3px;
+}
+
+/* RETRYレイアウト ================================ */
+/* line 105, /home/ec2-user/environment/w_game/app/assets/stylesheets/home.scss */
+.main-contents {
+  height: 500px;
+  width: 100%;
+}
+
+/* line 110, /home/ec2-user/environment/w_game/app/assets/stylesheets/home.scss */
+.btn a {
+  padding: 30px 30px;
+  margin: 10px;
+  background-color: black;
+  color: white;
+  display: inline-block;
+}
+
+/* WINレイアウト ================================ */
+/* line 119, /home/ec2-user/environment/w_game/app/assets/stylesheets/home.scss */
+.main-contents {
+  height: 500px;
+  width: 100%;
+}
+
+/* line 124, /home/ec2-user/environment/w_game/app/assets/stylesheets/home.scss */
+.footer-message {
+  padding-top: 50px;
+  color: white;
+}
