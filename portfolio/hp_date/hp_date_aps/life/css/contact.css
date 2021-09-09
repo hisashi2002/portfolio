@@ -1,0 +1,115 @@
+.top_content_wrapper h1 {
+  font-size: 3em;
+  color: blue;
+  text-align: center;
+}
+
+.top_content_wrapper #top_image {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* main */
+.main_content {
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+section {
+  width: 60%;
+}
+
+section h2 {
+  font-size: 1.7em;
+  text-align: center;
+  color: black;
+}
+
+section h3 {
+  font-size: 2.5em;
+}
+
+section p {
+  font-size: 1.3em;
+}
+
+section dl {
+  margin-top: 50px;
+}
+
+section dt {
+  font-size: 1.7em;
+  font-weight: bold;
+  background-color: blue;
+  color: yellow;
+}
+
+section dd {
+  font-size: 1.3em;
+  margin: 10px;
+}
+
+#sidebar {
+  width: 30%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* resposive */
+}
+
+#sidebar #key, #sidebar #water, #sidebar #car, #sidebar #wrecar {
+  position: relative;
+  margin-top: 5px;
+}
+
+#sidebar #key img, #sidebar #water img, #sidebar #car img, #sidebar #wrecar img {
+  display: block;
+  width: 100%;
+  align-items: center;
+}
+
+#sidebar #key img:hover, #sidebar #water img:hover, #sidebar #car img:hover, #sidebar #wrecar img:hover {
+  opacity: 0.6;
+}
+
+#sidebar #key h3, #sidebar #water h3, #sidebar #car h3, #sidebar #wrecar h3 {
+  color: white;
+  font-size: 1.3em;
+  padding: 0 10px;
+  background-color: black;
+  position: absolute;
+  z-index: 10;
+  left: 5%;
+}
+
+#sidebar #key a, #sidebar #water a, #sidebar #car a, #sidebar #wrecar a {
+  text-decoration: none;
+  color: black;
+}
+
+#sidebar #key a:visited, #sidebar #water a:visited, #sidebar #car a:visited, #sidebar #wrecar a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  #sidebar html {
+    font-size: 87.5%;
+  }
+  #sidebar .header_logo {
+    width: 60px;
+  }
+  #sidebar .contents {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  #sidebar #main_content,
+  #sidebar #sidebar {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

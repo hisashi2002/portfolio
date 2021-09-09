@@ -1,0 +1,364 @@
+@charset "UTF-8";
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+/******************************************************************
+
+Stylesheet: 480px以上(スマホの横向き)のモニタで適用
+
+******************************************************************/
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+.main_container {
+  margin-top: 50px;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.main_container .about_content {
+  max-width: 100%;
+  max-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-image: url(/img/about_top_bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main_container .about_content h1#otk_omoi {
+  margin: 150px auto;
+  font-size: 4em;
+  font-family: HGP行書体;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main_container .about_content h2 {
+  font-size: 2.3em;
+  font-family: HGP行書体;
+  color: black;
+  margin-top: 50px;
+}
+
+.main_container .about_content p {
+  max-width: 90%;
+  font-size: 1em;
+  margin: 20px auto;
+  color: black;
+}
+
+.main_container .otk_prof {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.main_container .otk_prof h3 {
+  margin: 25px auto;
+  font-size: 2em;
+  font-family: HGP行書体;
+}
+
+.main_container .otk_prof #otk_img {
+  margin: 10px 25px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.sub_contianer {
+  max-width: 100%;
+  margin-top: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub_contianer .otk_staff {
+  max-width: 80%;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub_contianer .otk_staff h2 {
+  font-size: 2em;
+}
+
+.sub_contianer .otk_staff .staff_info {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub_contianer .otk_staff .staff_info .staff_box {
+  width: 100%;
+  height: 100%;
+  margin: 30px 20px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid black;
+  -webkit-box-shadow: 4px 4px 12px gray;
+          box-shadow: 4px 4px 12px gray;
+}
+
+.sub_contianer .otk_staff .staff_info .staff_box .staff_img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 30px auto;
+}
+
+.sub_contianer .otk_staff #last_comment {
+  width: 90%;
+  font-size: 1em;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+@media screen and (min-width: 960px) {
+  /******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+  .main_container {
+    margin-top: 50px;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .main_container .about_content {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    background-image: url(/img/about_top_bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .main_container .about_content h1#otk_omoi {
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 5em;
+    font-family: HGP行書体;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .main_container .about_content h2#title {
+    font-size: 3em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .main_container .about_content .main_copy {
+    max-width: 80%;
+    height: 600px;
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .main_container .about_content .main_copy .first_copy p,
+  .main_container .about_content .main_copy .last_copy p {
+    color: white;
+    font-size: 1em;
+    margin: 0 auto;
+  }
+  .otk_prof {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px;
+  }
+  .otk_prof h3 {
+    margin: 50px auto;
+    font-size: 3.5em;
+  }
+  .otk_prof #otk_img {
+    margin: 0 25px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  .sub_contianer {
+    max-width: 100%;
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sub_contianer h2 {
+    font-size: 2.5em;
+  }
+  .sub_contianer .otk_staff {
+    max-width: 100%;
+    margin: 30px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sub_contianer .otk_staff .staff_info {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sub_contianer .otk_staff .staff_info .staff_box {
+    max-width: 100%;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    -webkit-box-shadow: 4px 4px 12px gray;
+            box-shadow: 4px 4px 12px gray;
+  }
+  .sub_contianer .otk_staff .staff_info .staff_box .staff_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    margin: 30px auto;
+  }
+  #last_comment {
+    width: 80%;
+    font-size: 1.3em;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=about_style.css.map */

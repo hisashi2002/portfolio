@@ -1,0 +1,51 @@
+body {
+    background-color: azure;
+    max-width: 50%;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 auto;
+    color: lightblue;
+}
+
+#form { 
+    text-align: center;
+}
+
+#input {
+    width: 10vw;
+    text-align: center;
+}
+
+ul {
+    font-size: 1.2em;
+}
+
+li {
+    color: black;
+    list-style: none;
+    max-width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid black;
+    height: 30px;    
+    text-align: center;
+}
+
+.strike-through {
+    text-decoration: line-through;
+}
+
+.clear-btn {
+    max-width: 50%;
+    display: block;
+    margin: 50px auto;
+    align-items: center;
+    background-color: crimson;
+    color: black;
+    font-weight: bold;
+}

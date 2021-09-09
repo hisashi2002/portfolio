@@ -1,0 +1,35 @@
+@import "breakpoints/company/base";
+@import "breakpoints/common/base";
+
+@media screen and (min-width: 480px) {
+    @import "breakpoints/company/480up";
+    @import "breakpoints/common/480up";
+}
+
+@media screen and (min-width: 600px) {
+    @import "breakpoints/company/600up";
+    @import "breakpoints/common/600up";
+}
+
+@media screen and (min-width: 960px) {
+    @import "breakpoints/company/960up";
+    @import "breakpoints/common/960up";
+}
+
+@media screen and (min-width: 1280px) {
+    @import "breakpoints/company/1280up";
+    @import "breakpoints/common/1280up";
+}
+
+@media (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+        @import "breakpoints/company/2x";}
+@media (min-resolution: 192dpi),
+(-webkit-min-device-pixel-ratio: 2) {
+    @import "breakpoints/common/2x";}
+
+
+@media print {
+    @import "breakpoints/company/1280up";
+    @import "breakpoints/common/1280up";
+}

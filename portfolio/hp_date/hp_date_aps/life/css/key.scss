@@ -1,0 +1,134 @@
+@charset "UTF-8";
+.top_content_wrapper {
+  h1 {
+    font-size: 4em;
+    color: darkblue;
+    text-align: center;
+    margin: 0px auto;
+  }
+
+  h2 {
+    font-size: 5em;
+    color: red;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #top_image {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* main */
+.main_content {
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+section {
+  width: 65%;
+  
+  & h2 {
+    font-size: 3em;
+    text-align: center;
+    color: darkblue;
+  }
+
+  & h3 {
+    font-size: 2.5em;
+    color: rgb(172, 0, 0);
+  }
+
+  & p {
+    font-size: 2em;
+    letter-spacing: 3px;
+    color: black;
+
+  }
+  
+  & dl {
+    margin-top: 50px;
+  }
+  
+  & dt {
+    font-size: 1.7em;
+    font-weight: bold;
+    background-color:blue;
+    color: yellow;
+  }
+  
+  & dd {
+    font-size: 1.3em;
+    margin: 10px;
+  }
+}
+
+#sidebar {
+  width: 30%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+  & #key, #water, #car, #wrecar {
+    position: relative;
+    margin-top: 5px;
+
+    & img {
+      display: block;
+      width: 100%;
+      align-items: center;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    & h3 {
+      color: white;
+      font-size: 1.3em;
+      padding: 0 10px;
+      background-color: black;
+      position: absolute;
+      z-index: 10;
+      left: 5%;
+    }
+
+    & a {
+      text-decoration: none;
+      color: black;
+
+      &:visited {
+      text-decoration: none;
+      color: black;
+      }
+    }
+  }
+
+
+  /* resposive */
+  @media (max-width: 600px) {
+    html {
+      font-size: 87.5%;
+    }
+
+    .header_logo {
+      width: 60px;
+    }
+
+    .contents {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+
+    #main_content,
+    #sidebar {
+      width: 100%;
+    }
+  }
+}

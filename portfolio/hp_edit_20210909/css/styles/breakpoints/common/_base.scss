@@ -1,0 +1,158 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+
+$cwhite: white;
+$cblack: black;
+$cred: #bd0101;
+
+// フォント
+p,
+h1,
+h2,
+h3,
+li {
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+html {
+  max-width: 100%;
+  text-align: center;
+  align-self: center;
+}
+
+body {
+  max-width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+// ヘッダーメニュー
+.header_nav {
+  display: flex;
+  max-width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin: 0 auto;
+
+  & .nav_menu {
+    max-width: 100%;
+    height: 60px;
+    margin-top: 70px;
+
+    & ul {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 0 5px;
+        list-style: none;
+        color: $cblack;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        & a {
+          list-style: none;
+          text-decoration: none;
+          color: $cblack;
+
+          &:visited {
+            text-decoration: none;
+            color: $cblack;
+          }
+
+          & p#e {
+            font-size: 0.1em;
+          }
+
+          & p#j {
+            font-size: 0.1em;
+          }
+
+          &:hover {
+            color: $cwhite;
+          }
+        }
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.6);
+          color: $cwhite;
+        }
+      }
+    }
+  }
+  & #nav_logo {
+    width: 4rem;
+    height: 3rem;
+    // border: 1px solid $cblack;
+
+    & #logo_img {
+      margin: 1px auto;
+      height: 6vh;
+    }
+  }
+}
+
+// フッターメニュー
+footer {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  .footer_nav {
+    max-width: 100%;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 1.2em;
+
+    & .footer_nav_menu {
+      max-width: 100%;
+      display: flex;
+      margin: 0 auto;
+
+      & ul {
+        display: flex;
+        padding: 0;
+
+        li {
+          margin: 0 5px;
+          list-style: none;
+          color: $cblack;
+
+          & a {
+            list-style: none;
+            text-decoration: none;
+            color: $cblack;
+
+            &:visited {
+              text-decoration: none;
+              color: $cblack;
+            }
+
+            &:hover {
+              color: $cwhite;
+              background-color: rgba(0, 0, 0, 0.7);
+            }
+          }
+        }
+      }
+    }
+  }
+  & #copylight {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}

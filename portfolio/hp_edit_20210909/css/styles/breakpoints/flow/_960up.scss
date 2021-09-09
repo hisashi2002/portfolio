@@ -1,0 +1,262 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+/******************************************************************
+
+Stylesheet: 480px以上(スマホの横向き)のモニタで適用
+
+******************************************************************/
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+$cwhite: white;
+$cblack: black;
+$cred: #cc0000;
+
+.flow_container {
+  margin-top: 60px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  & h1 {
+    color: $cred;
+    margin: 10px auto;
+    font-size: 5em;
+    font-family: HGP行書体;
+  }
+
+  & .flow_content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .copy {
+      width: 460px;
+      height: 230px;
+      text-align: start;
+      margin: 0 30px;
+      background-color: bisque;
+    }
+
+    & img {
+      width: 55wh;
+      height: 35vh;
+      margin: 0 30px;
+    }
+
+    & .step_1 {
+      max-width: 100%;
+      height: 40vh;
+      display: flex;
+      flex-direction: row;
+      margin-top: 10rem;
+      position: relative;
+
+      & .scroll {
+        position: absolute;
+        // bottom: 18em;
+        top: 85%;
+        left: 50%;
+        //丁度よく下側に設置するのにposition+bottomプロパティを使用
+        width: 3em;
+        height: 3em;
+        //スクロールボタンのタップorクリックを受け付けるサイズ
+        span {
+          width: 1em;
+          height: 1em;
+          position: absolute;
+          //矢印がずれるためtopなどで位置調整をする
+          top: 50%;
+          left: 33%;
+          transform: rotate(-45deg);
+          border-left: 3px solid $cblack;
+          border-bottom: 3px solid $cblack;
+          z-index: 2;
+          animation: popping-arrow 2s infinite ease-out;
+          //アニメーションさせる場合の設定
+          //@keyframesで設定したアニメーション名、秒数、infinite→無限繰り返し
+        }
+      }
+    }
+
+    #jamp1 {
+      width: 100px;
+      height: 230px;
+    }
+
+    & .step_2 {
+      max-width: 100%;
+      height: 40vh;
+      display: flex;
+      flex-direction: row-reverse;
+      position: relative;
+
+      & .scroll {
+        position: absolute;
+        // bottom: 25em;
+        top: 90%;
+        left: 50%;
+        //丁度よく下側に設置するのにposition+bottomプロパティを使用
+        width: 3em;
+        height: 3em;
+        //スクロールボタンのタップorクリックを受け付けるサイズ
+        span {
+          width: 1em;
+          height: 1em;
+          position: absolute;
+          //矢印がずれるためtopなどで位置調整をする
+          top: 25%;
+          left: 33%;
+          transform: rotate(-45deg);
+          border-left: 3px solid $cblack;
+          border-bottom: 3px solid $cblack;
+          z-index: 2;
+          animation: popping-arrow 2s infinite ease-out;
+          //アニメーションさせる場合の設定
+          //@keyframesで設定したアニメーション名、秒数、infinite→無限繰り返し
+        }
+      }
+    }
+
+    #jamp2 {
+      width: 100px;
+      height: 230px;
+    }
+
+    & .step_3 {
+      max-width: 100%;
+      height: 40vh;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+
+      & .scroll {
+        position: absolute;
+        // bottom: 18em;
+        top: 90%;
+        //丁度よく下側に設置するのにposition+bottomプロパティを使用
+        width: 3em;
+        height: 3em;
+        //スクロールボタンのタップorクリックを受け付けるサイズ
+        span {
+          width: 1em;
+          height: 1em;
+          position: absolute;
+          //矢印がずれるためtopなどで位置調整をする
+          top: 25%;
+          left: 33%;
+          transform: rotate(-45deg);
+          border-left: 3px solid $cblack;
+          border-bottom: 3px solid $cblack;
+          z-index: 2;
+          animation: popping-arrow 2s infinite ease-out;
+          //アニメーションさせる場合の設定
+          //@keyframesで設定したアニメーション名、秒数、infinite→無限繰り返し
+        }
+      }
+    }
+
+    #jamp3 {
+      width: 100px;
+      height: 230px;
+    }
+
+    & .step_4 {
+      max-width: 100%;
+      height: 80vh;
+      display: flex;
+      flex-direction: row-reverse;
+      position: relative;
+
+      & .scroll {
+        position: absolute;
+        // bottom: 18em;
+        top: 45%;
+        left: 50%;
+        //丁度よく下側に設置するのにposition+bottomプロパティを使用
+        width: 3em;
+        height: 3em;
+        //スクロールボタンのタップorクリックを受け付けるサイズ
+        span {
+          width: 1em;
+          height: 1em;
+          position: absolute;
+          //矢印がずれるためtopなどで位置調整をする
+          top: 25%;
+          left: 33%;
+          transform: rotate(-45deg);
+          border-left: 3px solid $cblack;
+          border-bottom: 3px solid $cblack;
+          z-index: 2;
+          animation: popping-arrow 2s infinite ease-out;
+          //アニメーションさせる場合の設定
+          //@keyframesで設定したアニメーション名、秒数、infinite→無限繰り返し
+        }
+      }
+    }
+
+    #jamp4 {
+      width: 100px;
+      height: 250px;
+    }
+
+    & .step_5 {
+      max-width: 80%;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & .transfer_copy {
+        max-width: 100%;
+        margin-top: 30px;
+        background-color: bisque;
+      }
+
+      & .transfer_img {
+        max-width: 100%;
+        display: flex;
+        margin: 20px auto;
+        position: relative;
+      }
+    }
+
+    & .step_6 {
+      width: 400px;
+      height: 200px;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+      font-size: 2em;
+      text-decoration: none;
+      color: $cblack;
+      position: relative;
+
+      &:visited {
+        color: $cblack;
+      }
+
+      &:hover {
+        color: $cwhite;
+        background-color: $cblack;
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* common */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic proN", "メイリオ", sans-serif;
+  color: #555;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* header */
+.header_logo {
+  width: 90px;
+}
+
+.header_content_wrapper {
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.header_content_wrapper .logo {
+  flex-basis: 40%;
+}
+
+.header_content_wrapper p {
+  font-size: 5em;
+  color: #FF0000;
+  font-weight: bold;
+  transform: scale(1.1, 2.5);
+}
+
+.header_content_wrapper p a {
+  text-decoration: none;
+  color: #FF0000;
+}
+
+.header_content_wrapper p :visited {
+  color: black;
+}
+
+nav {
+  max-width: 100%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 2em;
+  padding: 30px;
+}
+
+nav .btn {
+  font-size: 1.2em;
+  background-color: #9ed8f3;
+  padding: 2px 8px;
+  border: none;
+}
+
+nav .btn:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+/* footer */
+footer {
+  margin-top: 100px;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: darkblue;
+}
+
+footer ul {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  /* resposive */
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 5px;
+  padding: 0 5px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul li a:hover,
+footer ul li a :active {
+  opacity: 0.7;
+}
+
+footer ul small {
+  font-size: 0.7em;
+}
+
+@media (max-width: 600px) {
+  footer ul html {
+    font-size: 87.5%;
+  }
+  footer ul .header_logo {
+    width: 60px;
+  }
+  footer ul .contents {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  footer ul #main_content,
+  footer ul #sidebar {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=base.css.map */

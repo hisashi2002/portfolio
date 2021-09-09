@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@import 'mixin';
+
+.top_content_wrapper {
+  #top_image {
+    max-width: 100%;
+    margin: 50px;
+  }
+}
+
+/* main */
+.main_content {
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+section {
+  width: 60%;
+  font-family: "Sawarabi Gothic";
+  
+  & h2#main_head {
+    font-size: 3em;
+    text-align: center;
+    color: darkblue;
+  }
+
+  & p {
+    font-size: 1.3em;
+  }
+  
+  & dl {
+    height: 80vh;
+    margin-top: 50px;
+  }
+  
+  & dt#sub_head1, #sub_head2, #sub_head3 {
+    font-size: 1.7em;
+    font-weight: bold;
+    background-color:blue;
+    color: yellow;
+    // opacity: 0;
+
+    &.inview {
+      opacity: 1;
+      & .char {
+        display: inline-block;
+        @include animation($name: kf-animate-chars,
+          $duration: 0.7s,
+          $timing-function: ease,
+          $fill-mode: both
+        );
+
+        @for $i from 1 through 50 {
+          &:nth-child(#{$i}) {
+            animation-delay: $i * 0.08s
+          }
+        }
+      }
+    }
+  }
+  
+  @keyframes kf-animate-chars {
+    0% {
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  & dd {
+    font-size: 1.3em;
+    margin: 10px;
+  }
+}
+
+
+
+#sidebar {
+  width: 30%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+  & #key, #water, #car, #wrecar {
+    position: relative;
+    margin-top: 5px;
+
+    & img {
+      display: block;
+      width: 100%;
+      align-items: center;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    & h3 {
+      color: white;
+      font-size: 1.3em;
+      padding: 0 10px;
+      background-color: black;
+      position: absolute;
+      z-index: 10;
+      left: 5%;
+    }
+
+    & a {
+      text-decoration: none;
+      color: black;
+
+      &:visited {
+      text-decoration: none;
+      color: black;
+      }
+    }
+  }
+
+
+  /* resposive */
+  @media (max-width: 600px) {
+    html {
+      font-size: 87.5%;
+    }
+
+    .header_logo {
+      width: 60px;
+    }
+
+    .contents {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+
+    #main_content,
+    #sidebar {
+      width: 100%;
+    }
+  }
+}

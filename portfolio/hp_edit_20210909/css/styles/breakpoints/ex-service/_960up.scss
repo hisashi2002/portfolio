@@ -1,0 +1,232 @@
+@import "mixin";
+
+$cwhite: white;
+$cblack: black;
+$cred: #cc0000;
+
+.service_container {
+  max-width: 100%;
+
+  & .service_top {
+    max-width: 100%;
+    height: 640px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & p {
+      font-size: 1.3em;
+    }
+
+    & h1 {
+      color: $cblack;
+      margin: 10px auto;
+      font-size: 5em;
+      font-family: HGP行書体;
+    }
+
+    & #top_comment {
+      max-width: 100%;
+      margin-top: 40px;
+      text-align: center;
+      font-size: 1.3em;
+      @include animation($name: comment, $duration: 5s);
+    }
+  }
+}
+
+@keyframes comment {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.service_content {
+  max-width: 100%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & .service_1,
+  .service_2,
+  .service_3,
+  .service_4,
+  .service_5 {
+    max-width: 100%;
+    height: 800px;
+
+    & img {
+      width: 100%;
+      height: 50vh;
+    }
+
+    & .view_img {
+      margin: 100px auto;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: cadetblue;
+      }
+
+      &.inview {
+        &::after {
+          @include animation(
+            $name: cover-slide,
+            $duration: 3s,
+            $fill-mode: forwards
+          );
+        }
+      }
+
+      @keyframes cover-slide {
+        0% {
+          left: 0;
+          right: 100%;
+        }
+
+        50% {
+          left: 0;
+          right: 0;
+        }
+
+        100% {
+          left: 100%;
+          right: 0;
+        }
+      }
+
+      .slide_img {
+        // width: 100%;
+        // height: 50vh;
+        opacity: 1;
+
+        .inview & {
+          opacity: 1;
+          @include animation(
+            $name: img-zoom,
+            $duration: 1s,
+            $fill-mode: forwards
+          );
+        }
+
+        @keyframes img-zoom {
+          0% {
+            opacity: 0;
+          }
+
+          50% {
+            opacity: 0;
+          }
+
+          50.1% {
+            opacity: 1;
+          }
+
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    & p {
+      width: 100vw;
+      height: 50vh;
+      text-align: center;
+    }
+
+    & .in_content {
+      max-width: 90%;
+      margin: 100px auto;
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      align-items: center;
+      @include animation($name: float, $duration: 5s);
+
+      & img {
+        width: 200px;
+        height: 200px;
+      }
+
+      & p {
+        width: 360px;
+        height: 150px;
+        background-color: antiquewhite;
+        text-align: start;
+        display: block;
+      }
+    }
+
+    @keyframes float {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+    .move {
+      max-width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      margin-top: 150px;
+
+      & a#return,
+      a#contact {
+        background-color: cadetblue;
+        width: 200px;
+        margin: 0 25px;
+        font-size: 2em;
+        text-decoration: none;
+        color: $cwhite;
+
+        &:vidited {
+          color: $cblack;
+        }
+      }
+    }
+
+    .sub_content {
+      margin-top: 10px;
+      max-width: 100%;
+
+      & h3 {
+        text-align: center;
+        font-size: 2em;
+      }
+    }
+  }
+    .jobs {
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+
+      & p {
+        flex-basis: 50%;
+        font-size: 1.5em;
+      }
+    }
+

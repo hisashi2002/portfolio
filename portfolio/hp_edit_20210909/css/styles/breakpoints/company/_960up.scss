@@ -1,0 +1,104 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+$cwhite: white;
+$cblack: black;
+$cred: #ff0000;
+
+.company_container {
+  margin: 50px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+
+  & h1 {
+    color: $cred;
+    margin: 10px auto;
+    font-size: 5em;
+    font-family: HGP行書体;
+  }
+
+  & .company_info {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    // background-color: #eccfcf;
+
+    & th {
+      text-align: start;
+      padding: 5px 25px 5px 25px;
+      border-bottom: 1px solid $cblack;
+    }
+
+    & td {
+      text-align: start;
+      padding: 5px 100px 5px 10px;
+      border-bottom: 1px solid $cblack;
+    }
+  }
+}
+
+.map {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+
+  & h2 {
+    margin: 0 auto;
+  }
+}
+
+.sub_content {
+  max-width: 80%;
+  margin: 0 auto;
+  height: 600px;
+  text-align: center;
+
+  & .links {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    & #link1,
+    #link2,
+    #link3,
+    #link4 {
+      width: 200px;
+      height: 300px;
+      border: 1px solid $cblack;
+      flex-basis: 40%;
+      margin: 10px 10px;
+
+      &:nth-child(3) {
+        width: 200px;
+        height: 100px;
+      }
+
+      & h3, p, a {
+        color: $cblack;
+        text-decoration: none;
+
+        &:visited {
+          color: $cblack;
+        }
+      }
+    }
+  }
+}
+
+.menseki {
+  max-width: 50%;
+  margin: 100px auto;
+  border: 1px solid $cblack;
+}

@@ -1,0 +1,5 @@
+@import "breakpoints/common/base";
+
+@media screen and (min-width: 960px) {
+    @import "breakpoints/common/960up";
+}

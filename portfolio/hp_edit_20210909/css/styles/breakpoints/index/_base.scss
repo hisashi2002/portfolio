@@ -1,0 +1,362 @@
+$cwhite: white;
+$cblack: black;
+$cred: #bd0101;
+
+
+.top_container {
+  max-width: 100%;
+  height: 200px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+
+  & .main_logo {
+    max-width: 100%;
+    height: 300px;
+    margin: 0;
+    text-align: center;
+
+    & .logo_moji {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: ko-zoomup 2s;
+      transition: ease;
+
+      & #kabu {
+        text-align: center;
+        font-size: 30px;
+        font-family: HGP行書体;
+        display: inline-block;
+        width: 300px;
+      }
+
+      & #otk {
+        width: 300px;
+        margin: 0 auto;
+        font-size: 100px;
+        font-family: HGP行書体;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@keyframes ko-zoomup {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes popping-arrow {
+  0% {
+    transform: scale(0);
+  }
+  
+  100% {
+    transform: scale(1);
+    transform: rotate(-45deg);
+  }
+
+}
+
+// main_content
+
+.main_wrapper {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & .work_content {
+    max-width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+
+    & #ex_work,
+    #base_work {
+      flex-basis: 50%;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid $cwhite;
+      text-align: center;
+      height: 100px;
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.6;
+        position: absolute;
+        z-index: 50;
+        top: 0;
+        left: 0;
+      }
+
+      &:hover {
+        & img {
+          opacity: 1;
+          animation: img_zoom 0.2s;
+          animation-fill-mode: forwards;
+        }
+
+        &::before {
+          opacity: 0;
+        }
+      }
+
+      & h3 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: $cwhite;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 50;
+        font-size: 0.5em;
+      }
+
+      & p {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%);
+        color: $cwhite;
+        font-size: 0.8em;
+        z-index: 50;
+      }
+    }
+  }
+
+  & .work_flow {
+    max-width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+    & #flow {
+      max-width: 100%;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid $cwhite;
+
+      &::before {
+        content: "";
+        width: 100%;
+        background-color: black;
+        opacity: 0.6;
+        position: absolute;
+        z-index: 50;
+        top: 0;
+        left: 0;
+      }
+
+      & img {
+        margin: 0 auto;
+        width: 120vw;
+        height: 20vh;
+      }
+
+      &:hover {
+        & img {
+          opacity: 1;
+          animation: img_zoom 0.2s;
+          animation-fill-mode: forwards;
+        }
+
+        &::before {
+          opacity: 0;
+        }
+      }
+
+      & h3 {
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        color: $cwhite;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 50;
+      }
+
+      & p {
+        position: absolute;
+        font-size: 1em;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        color: $cwhite;
+        z-index: 50;
+      }
+    }
+  }
+
+  & .company_content {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    // height: 640px;
+
+    & #about,
+    #company {
+      flex-basis: 30%;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid $cwhite;
+      height: 100px;
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.6;
+        position: absolute;
+        z-index: 50;
+        top: 0;
+        left: 0;
+      }
+
+      & img {
+        opacity: 0.6;
+        margin: 0 auto;
+        width: 150vw;
+        height: 30vh;
+      }
+
+      &:hover {
+        & img {
+          opacity: 1;
+          animation: img_zoom 0.2s;
+          animation-fill-mode: forwards;
+        }
+
+        &::before {
+          opacity: 0;
+        }
+      }
+
+      & h3 {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
+        color: $cwhite;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 50;
+        font-size: 0.6em;
+      }
+
+      & p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        color: $cwhite;
+        font-size: 0.65em;
+        z-index: 50;
+        text-align: center;
+      }
+    }
+
+    & #contact {
+      flex-basis: 40%;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid $cwhite;
+      height: 100px;
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.6;
+        position: absolute;
+        z-index: 50;
+        top: 0;
+        left: 0;
+      }
+
+      & img {
+        margin: 0 auto;
+        width: 150vw;
+        height: 5vh;
+      }
+
+      &:hover {
+        & img {
+          opacity: 1;
+          animation: img_zoom 0.2s;
+          animation-fill-mode: forwards;
+        }
+
+        &::before {
+          opacity: 0;
+        }
+      }
+
+      & h3 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: $cwhite;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 50;
+        font-size: 0.8em;
+      }
+
+      & p {
+        width: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        color: $cwhite;
+        font-size: 0.65em;
+        z-index: 50;
+        text-align: center;
+      }
+    }
+  }
+
+  @keyframes img_zoom {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.info {
+  height: 100px;
+  margin: 30px auto;
+
+  & .discription {
+    max-width: 100%;
+
+    & h2 {
+      text-align: center;
+    }
+
+    & p {
+      text-align: center;
+      font-size: 0.5em;
+      display: inline-block;
+    }
+  }
+}

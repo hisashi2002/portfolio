@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+$cwhite: white;
+$cblack: black;
+$cred: #FF0000;
+$cblue: darkblue;
+$cyellow: yellow;
+
+/* common */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic proN", "メイリオ", sans-serif;
+  color: #555;
+  line-height: 1.5;
+  // background-color: red;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* header */
+.header_logo {
+  width: 90px;
+}
+
+.header_content_wrapper {
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  
+  .logo {
+    flex-basis: 40%;
+  }
+
+  & p {
+    font-size: 5em;
+    color: $cred;
+    font-weight: bold;
+    transform: scale(1.1, 2.5);
+
+    & a {
+      text-decoration: none;
+      color: $cred;
+    }
+
+    & :visited {
+      color: $cblack;
+    }
+  }
+}
+  nav {
+    max-width: 100%;
+    margin: 50px auto;
+    text-align: center;
+
+    & a {
+      text-decoration: none;
+      font-size: 2em;
+      padding: 30px;
+    }
+
+    & .btn {
+      font-size: 1.2em;
+      background-color: rgb(158, 216, 243);
+      padding: 2px 8px;
+      border: none;
+
+      &:hover {
+        background-color: darkblue;
+        color: white;
+      }
+    }
+  }
+
+/* footer */
+footer {
+  margin-top: 100px;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: darkblue;
+
+  & ul {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+
+    & li {
+      display: inline-block;
+      margin: 5px;
+      padding: 0 5px;
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+
+      & a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover,
+        :active {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    small {
+      font-size: 0.7em;
+    }
+
+    /* resposive */
+    @media (max-width: 600px) {
+      html {
+        font-size: 87.5%;
+      }
+
+      .header_logo {
+        width: 60px;
+      }
+
+      .contents {
+        flex-direction: column;
+        margin-top: 10px;
+      }
+
+      #main_content,
+      #sidebar {
+        width: 100%;
+      }
+    }
+  }
+}

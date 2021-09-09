@@ -1,0 +1,35 @@
+@import "breakpoints/contact-form/base";
+@import "breakpoints/common/base";
+
+@media screen and (min-width: 480px) {
+    @import "breakpoints/contact-form/480up";
+    @import "breakpoints/common/480up";
+}
+
+@media screen and (min-width: 600px) {
+    @import "breakpoints/contact-form/600up";
+    @import "breakpoints/common/600up";
+}
+
+@media screen and (min-width: 960px) {
+    @import "breakpoints/contact-form/960up";
+    @import "breakpoints/common/960up";
+}
+
+@media screen and (min-width: 1280px) {
+    @import "breakpoints/contact-form/1280up";
+    @import "breakpoints/common/1280up";
+}
+
+@media (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+        @import "breakpoints/contact-form/2x";}
+@media (min-resolution: 192dpi),
+(-webkit-min-device-pixel-ratio: 2) {
+    @import "breakpoints/common/2x";}
+
+
+@media print {
+    @import "breakpoints/contact-form/1280up";
+    @import "breakpoints/common/1280up";
+}
