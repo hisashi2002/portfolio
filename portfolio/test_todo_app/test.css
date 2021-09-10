@@ -64,12 +64,14 @@ li {
 }
 
 .clear-btn {
-    width: 100px;
+    width: 150px;
     height: 30px;
     display: block;
     margin: 50px auto;
     align-items: center;
-    background-color: crimson;
-    color: black;
+    background-color: rgba(218, 0, 0);
+    color:white;
+    font-size: 20px;
     font-weight: bold;
+    border: none;
 }
