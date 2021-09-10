@@ -6,10 +6,32 @@ body {
     align-items: center;
 }
 
+.container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
     text-align: center;
-    margin: 0 auto;
+    margin: 30px auto;
     color: lightblue;
+}
+
+#name {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+#btn2 {
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+    height: 30px;
+
 }
 
 #form { 
@@ -17,7 +39,8 @@ h1 {
 }
 
 #input {
-    width: 10vw;
+    width: 15vw;
+    height: 3vh;
     text-align: center;
 }
 
@@ -27,13 +50,13 @@ ul {
 
 li {
     color: black;
-    list-style: none;
-    max-width: 50%;
-    margin: 0 auto;
-    background-color: white;
-    border: 1px solid black;
+    width: 500px;
     height: 30px;    
     text-align: center;
+    margin: 5px auto;
+    background-color: white;
+    border: 1px solid black;
+    list-style: none;
 }
 
 .strike-through {
@@ -41,7 +64,8 @@ li {
 }
 
 .clear-btn {
-    max-width: 50%;
+    width: 100px;
+    height: 30px;
     display: block;
     margin: 50px auto;
     align-items: center;

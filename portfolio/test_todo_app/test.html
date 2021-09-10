@@ -5,21 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="test.css">
-    <title>Document</title>
+    <title><ToDoアプリ</title>
 </head>
 <body>
-    <h1>ToDoリスト</h1>
-    <form id="form">
-        <input type="text" id="input" placeholder="TODOを入力" autocomplete="off">
-    </form>
+    <div class="contaier">
+        <h1>ToDoリスト</h1>
+        <button id="btn2">最初にこちらにクリックしてください</button>
+        
+        <p id="name">名前</p>
+        
+        <form id="form">
+            <input type="text" id="input" placeholder="TODOを入力" autocomplete="off">
+        </form>
+        <ul class="list_group" id="ul">
 
-    <ul class="list_group" id="ul">
+        </ul>
 
-    </ul>
-
-    <button class="clear-btn" id="btn">クリア</button>
-    <button id="btn2">名前を入力してください</button>
-
+        <button class="clear-btn" id="btn">クリア</button>
+    </div>
     <script src="main.js"></script>
     <script src="sub.js"></script>
 </body>
