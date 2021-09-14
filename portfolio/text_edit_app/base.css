@@ -1,0 +1,53 @@
+.container {
+  max-width: 100%;
+}
+
+.container h1 {
+  font-size: 50px;
+}
+
+.container .text_area {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .text_area h2 {
+  font-size: 30px;
+}
+
+.container .text_area .sw_befot {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .text_area .sw_befot .first {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+.container .text_area .sw_befot .second {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+.container .text_area .sw_befot .third {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+/*# sourceMappingURL=base.css.map */
